@@ -1,6 +1,6 @@
 # TwentyFour
 
-*Twenty Four* is a number game. The player is presented with a card
+[Twenty Four](https://www.24game.com/) is a number game. The player is presented with a card
 containing four numbers. The object is to use those four numbers to make
 the value 24 using the four standard arithmetic operations
 (plus, minus, times, divide). This Julia module provide solves these
