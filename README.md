@@ -6,12 +6,6 @@ the value 24 using the four standard arithmetic operations
 (plus, minus, times, divide). This Julia module provide solves these
 puzzles.
 
-## Installation
-
-```julia
-julia> Pkg.clone("https://github.com/scheinerman/TwentyFour.jl.git")
-```
-
 ## Usage
 
 Use the `solve` function to find solutions to *Twenty Four* puzzles.

@@ -6,7 +6,7 @@ import Base: length, show, getindex
 export XXIV, solve
 
 
-function solve(nums...)
+function solve(nums...)::String
   @assert length(nums)>1 "Please give two or more integers or rationals"
   X = XXIV(nums...)
   solver(X)
@@ -15,7 +15,7 @@ function solve(nums...)
   else
     return "No solution"
   end
-end 
+end
 
 
 
@@ -31,7 +31,7 @@ global const OP_SYMS = [ "+", "-", "*", "/"]
 """
 `XXIV` is an instance of a Twenty Four problem.
 """
-type XXIV
+mutable struct XXIV
   nums::Vector{Rational{Int}}
   numstrs::Vector{String}
   goal::Int
@@ -92,10 +92,10 @@ end
 `str(x::Rational{Int})` returns a nice string form of `x`.
 """
 function str(x::Rational{Int})
-  if den(x)==1
-    return "$(num(x))"
+  if denominator(x)==1
+    return "$(numerator(x))"
   end
-  return "$(num(x))/$(den(x))"
+  return "$(numerator(x))/$(denominator(x))"
 end
 
 
@@ -153,6 +153,7 @@ function solver(X::XXIV)
               X.solved = true
               return true
             end
+            catch
           end
 
         end # next t
