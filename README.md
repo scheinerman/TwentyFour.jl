@@ -1,5 +1,14 @@
 # TwentyFour
 
+
+[![Build Status](https://travis-ci.org/scheinerman/TwentyFour.jl.svg?branch=master)](https://travis-ci.org/scheinerman/TwentyFour.jl)
+
+[![Coverage Status](https://coveralls.io/repos/scheinerman/TwentyFour.jl/badge.svg?branch=master&service=github)](https://coveralls.io/github/scheinerman/TwentyFour.jl?branch=master)
+
+[![codecov.io](http://codecov.io/github/scheinerman/TwentyFour.jl/coverage.svg?branch=master)](http://codecov.io/github/scheinerman/TwentyFour.jl?branch=master)
+
+
+
 [Twenty Four](https://www.24game.com/) is a number game. The player is presented with a card
 containing four numbers. The object is to use those four numbers to make
 the value 24 using the four standard arithmetic operations
