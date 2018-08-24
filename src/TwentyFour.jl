@@ -5,7 +5,15 @@ import Base: length, show, getindex
 
 export XXIV, solve
 
-
+"""
+`solve(nums...)` solves a Twenty-Four puzzle for the given numbers.
+Returns a `String` giving the solution.
+Example:
+```
+julia> solve(4,2,5,1)
+"(4+2)*(5-1)"
+```
+"""
 function solve(nums...)::String
   @assert length(nums)>1 "Please give two or more integers or rationals"
   X = XXIV(nums...)
