@@ -5,7 +5,8 @@ uuid = "7a58b676-71cc-56e9-9a9e-f0a0a3b766b0"
 Combinatorics = "861a8166-3701-5b0c-9a16-15d98fcdc6aa"
 
 [compat]
-julia = "≥ 1.0.0"
+Combinatorics = "1"
+julia = "1"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
